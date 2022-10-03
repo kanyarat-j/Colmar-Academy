@@ -241,30 +241,41 @@ html, body {
 .part-four > .exhibit {
   display: flex;
   flex-direction: row;
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* margin: 32px 0; */
 }
 
-.part-four > .left-side {
-  display: flex;
-  flex-direction: column;
-   width: 60%;
-  margin: 32px 24px;
-
-}
-
-.part-two > .left-side h2 {
-  font-size: 42px;
-  margin-top: 32px;
-  margin-bottom: 24px;
-}
-
-.part-two > .left-side > div {
+.part-four > .exhibit > .left-side {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  background-color: aqua;
+  width: 60%;
+  margin: 0 24px;
 
 }
 
-.part-two > .right-side {
+.part-four > .exhibit > .left-side video {
+  /* height: auto; */
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.part-four > .exhibit > .left-side > .video-caption {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.part-four > .exhibit > .left-side > .video-caption p {
+  margin-top: 8px;
+
+}
+
+.part-four > .exhibit > .left-side > .video-caption strong  {
+  font-size: 28px;
+  
+}
+.part-four > .right-side {
   display: flex;
   flex-direction: column;
   margin: 32px 0;
